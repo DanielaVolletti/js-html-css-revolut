@@ -52,11 +52,11 @@ header {
 
 /* hamburger menu */
 
-#icona-hamburger {
-  /* display: none; */
+.icona-hamburger {
+  display: none;
 }
 
-#hamburgher {
+.hamburgher {
   position: absolute;
   top: 0;
   left: 0;
@@ -67,6 +67,7 @@ header {
   flex-direction: column;
   padding: 80px 50px 10px 50px;;
   overflow: scroll;
+  display: none;
 }
 
 .liste:nth-child(1) {
@@ -77,7 +78,7 @@ header {
   padding-top: 40px;
 }
 
-#hamburgher .liste ul li {
+.hamburgher .liste ul li {
   padding-bottom: 40px;
   padding-left: 0;
 }
@@ -99,7 +100,7 @@ header {
   padding-top: 40px;
 }
 
-#hamburgher .liste .mio-dropdown-due li {
+.hamburgher .liste .mio-dropdown-due li {
   padding-bottom: 30px;
 }
 
@@ -109,4 +110,37 @@ header {
 
 #bottone-app a {
   text-decoration: none;
+}
+
+.close {
+  display: block;
+  position: absolute;
+  right: 55px;
+  top: 30px;
+  font-size: 30px;
+  color: rgba(25, 28, 31);
+}
+
+.fade-in {
+  display: block;
+}
+
+@media screen and (max-width: 1080px) {
+
+  .nav-sparisce {
+    display: none;
+  }
+
+  .icona-hamburger {
+    display: block;
+    font-size: 25px;
+  }
+
+
+}
+
+@media screen and (min-width: 1081px){
+  .fade-in {
+    display: none;
+  }
 }

@@ -14,6 +14,21 @@ $(document).ready(function() {
     }
   )
 
+  // faccio apparire menu hamburger al click
+  $('.icona-hamburger').click(
+  function () {
+    $(".hamburgher").addClass('fade-in');
+  }
+)
+  //chiudiamo il menu
+  $('.fa-times').click(
+    function () {
+      $(".hamburgher").removeClass('fade-in');
+    }
+)
+
+
+  // faccio apparire dropdown menu hamburger
   $('.dropdown-due').click(
     function() {
       $(this).children('.mio-dropdown-due').slideToggle();
