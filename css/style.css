@@ -39,6 +39,10 @@ header {
   font-weight: bold;
 }
 
+.navbar ul li a:focus {
+  color: rgba(25, 28, 31, 1);
+}
+
 .bottone {
   background-color: rgb(235, 0, 141);
   border-radius: 25px;
