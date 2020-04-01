@@ -10,10 +10,15 @@ $(document).ready(function() {
   // faccio apparire e scomparire al click il dropdown di ciascun dropdown menù
   $('.dropdown a').click(
     function() {
-      $(this).siblings('.mio-dropdown').fadeToggle();
+      $(this).siblings('.mio-dropdown').toggle();
     }
   )
 
+  $('.dropdown-due').click(
+    function() {
+      $(this).children('.mio-dropdown-due').slideToggle();
+    }
+  )
 
 
 });
