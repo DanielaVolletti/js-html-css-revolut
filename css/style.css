@@ -32,3 +32,14 @@ header {
 #navbar ul li a {
   text-decoration: none;
 }
+
+/* dropdown */
+.dropdown {
+  position: relative;
+}
+
+.mio-dropdown {
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
